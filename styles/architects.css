@@ -12,16 +12,39 @@
 .display-flex{
     display: flex;
 }
-
+.btn-primary{
+    background-color: #FF900E;
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding: 20px 25px;
+    border-radius: 8px;
+    border: none;
+}
+.main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+main>section{
+    margin-top: 130px;
+}
+.section-title{
+    font-size: 2.8rem;
+}
 /* header styles */
 .navbar, .banner{
     max-width: 1440px;
     margin: 0 auto;
 }
+.band{
+    font-weight: 700;
+    font-size: 3rem;
+}
 .navbar{
     justify-content: space-between;
+    align-items: center;
 }
-/* all color here */
+/* all color share here */
 /* dark 01 */
 .text-black{
     color: #131313;
@@ -31,11 +54,13 @@
 .text-gray{
     color: #424242;
 }
-
+/* dark 03 */
 .text-light-gray{
     color: #727272;
 }
-
+.text-primary{
+    color: #FF900E;
+}
 .bg-light{
     background-color: rgba(255, 144, 14, 0.1);
 }
@@ -47,4 +72,62 @@
 .nav-link{
     text-decoration: none;
     font-weight: 500;
+}
+
+/* banner content styles */
+.banner-content{
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.banner-title{
+    font-size: 4rem;
+    font-weight: 700;
+}
+.banner-image{
+    width: 100%;
+}
+/* team and feature related style */
+.teams{
+    align-items: center;
+}
+.team-img-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    border-radius: 8px;
+}
+.our-features{
+    margin-left: 130px;
+    max-width: 530px;
+}
+
+#quick-list{
+    font-weight: 500;
+}
+
+/* responsive media query */
+@media screen and (max-width:576px) {
+    .navbar, 
+    .nav-links,
+    .teams{
+        flex-direction: column;
+    }
+    .team-img-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .our-features{
+        margin-left: 20px;
+    }
+}
+
+/* medium size device */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .teams{
+        flex-direction: column;
+    }
+    .our-features{
+        margin-left: 50px auto;
+    }
 }
