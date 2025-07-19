@@ -198,7 +198,19 @@ main>section{
 .sponsor-companies img{
     filter: grayscale(100%);
 }
-
+ /* footer section */
+.footer-section{
+    max-width: 1440px;
+    max-height: 100px;
+    background-color: rgba(255, 244, 231, 1);
+    text-align: center;
+    border: 1px solid rgba(255, 244, 231, 1);
+    font-weight: 300;
+    font-size: 1.25rem;
+    border-radius: 8px;
+    margin-top: 120px;
+    margin-bottom: 100px;
+}
 
 /* responsive media query */
 @media screen and (max-width:576px) {
