@@ -240,6 +240,9 @@ main>section{
         margin-top: 20px;
         margin-left: 20px;
     }
+    .text-light-gray{
+        font-size: 1.25rem;
+    }
 }
 
 /* medium size device */
